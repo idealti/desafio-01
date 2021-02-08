@@ -6,7 +6,7 @@ Este repositório tem como objetivo avaliar habilidades de desenvolvimento front
 
 A Guepardo é uma empresa de transporte. Para o presente teste, Você tem a missão de escrever a seguinte tela para o seu novo site:
 
-![Modelo de tela](./assets/modelo.png)
+![Modelo de tela](./proposta/assets/modelo.png)
 
 Para fazer o desafio:
 - Fork o projeto;
