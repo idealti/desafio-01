@@ -748,3 +748,4 @@ MigrationBackup/
 .ionide/
 
 # End of https://www.toptal.com/developers/gitignore/api/intellij+all,notepadpp,visualstudio,visualstudiocode,eclipse,netbeans,vagrant,linux,windows,macos,node,yarn,bower
+tags

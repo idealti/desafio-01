@@ -1,0 +1,38 @@
+.c-main {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr;
+  padding: 50px 30px;
+
+  &__title {
+    margin: 20px 0;
+    @include font-default("title");
+  }
+
+  &__subtitle {
+    @include font-default("subtitle");
+  }
+
+  &__clock {
+    display: none;
+  }
+
+  &__baloon {
+    align-self: center;
+    display: none;
+  }
+
+  @include for-tablet-portrait-up {
+    grid-template-columns: 2fr 1fr;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    &__clock {
+      display: block;
+    }
+
+    &__baloon {
+      display: block;
+    }
+  }
+}

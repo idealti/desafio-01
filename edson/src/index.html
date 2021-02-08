@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Entregando cargas e sonhos." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Início | Guepardo Transportes</title>
+  </head>
+  <body>
+    <header class="c-header">
+      <div class="c-header__logo">
+        <a href="#">
+          <img src="./assets/logo@3x.png" alt="Guepardo Transportes" />
+        </a>
+      </div>
+      <nav class="c-nav">
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contato</a>
+      </nav>
+    </header>
+    <section class="c-banner">
+      <div>
+        <h1 class="c-banner__title">Entregando cargas e sonhos</h1>
+        <p class="c-banner__subtitle">
+          Desde 1980 entregando cargas e fazendo pessoas e negócios se
+          realizarem
+        </p>
+      </div>
+    </section>
+    <main class="c-main">
+      <div>
+        <h1 class="c-main__title">Entregas rápidas e eficientes</h1>
+        <h2 class="c-main__subtitle">
+          Temos experiência na entrega de cargas para pessoas e empresas em
+          tempo recorde para todo o Brasil.
+        </h2>
+      </div>
+      <div class="c-main__clock">
+        <img src="./assets/relogio.svg" alt="Relógio" />
+      </div>
+      <form class="c-form" id="contactForm" action="">
+        <h1 class="c-form__title">Fale conosco</h1>
+        <label for="name">Nome</label>
+        <input
+          class="c-form__input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="João da Silva"
+          required
+        />
+        <label class="c-form__label" for="email">E-mail</label>
+        <input
+          class="c-form__input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="joao@suaempresa.com"
+          required
+        />
+        <label class="c-form__label" for="message">Mensagem</label>
+        <textarea
+          class="c-form__input"
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          required
+        ></textarea>
+        <button class="c-button js-button" type="submit">Enviar</button>
+      </form>
+      <div class="c-form--sucess js-sucess">
+        <h2>Formulário enviado com sucesso.</h2>
+        <p>Em breve entramos em contato com você!</p>
+      </div>
+      <div class="c-main__baloon">
+        <img src="./assets/baloes.svg" alt="balões de mensagem" />
+      </div>
+      <div class="c-form--error js-error">
+        <h2>Erro ao enviar a mensagem.</h2>
+        <p>
+          Por favor, tente novamente ou então entre em contato diretamente
+          conosco
+          <a href="mailto:guepardo@transportes.com">guepardo@transportes.com</a>
+        </p>
+      </div>
+    </main>
+    <footer class="c-footer">
+      <p>2021 Guepardo Transportes</p>
+    </footer>
+  </body>
+</html>

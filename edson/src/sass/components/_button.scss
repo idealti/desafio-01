@@ -1,0 +1,12 @@
+.c-button {
+  background-color: $color-yellow;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 50px;
+  width: 200px;
+
+  &:hover {
+    background-color: lighten($color-yellow, 10%);
+  }
+}

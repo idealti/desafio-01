@@ -1,0 +1,35 @@
+.c-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  & a {
+    color: $color-grey;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    margin: 0.5rem;
+    padding-bottom: 1rem;
+    position: relative;
+    text-decoration: none;
+    @include font-default("text");
+
+    &:before {
+      background: #252525;
+      border-radius: 5px;
+      bottom: 0;
+      content: "";
+      height: 3px;
+      left: 0;
+      position: absolute;
+      transform: scaleX(0);
+      transition: 0.25s linear;
+      visibility: hidden;
+      width: 100%;
+    }
+
+    &:hover:before {
+      transform: scaleX(1);
+      visibility: visible;
+    }
+  }
+}
