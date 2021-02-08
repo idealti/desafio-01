@@ -1,0 +1,13 @@
+/**
+ * Importing website's font family
+ */
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Oxygen&display=swap');
+
+html, body {
+  font-family: 'Oxygen', sans-serif;
+  color: #101010;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nova Square', cursive;
+}
