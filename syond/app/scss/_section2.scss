@@ -1,0 +1,124 @@
+    main {
+        .wrap-section2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            .section2-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 40px;
+                form {
+                    fieldset {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        border: none;
+                        legend {
+                            h1 {
+                                font-size: $fontSizeVeryHigh;
+                                font-weight: 300;
+                            }
+                        }
+                        label {
+                            margin-top: 35px;
+                            font-size: $fontSizeHigh;
+                        }
+                        input {
+                            width: 800px;
+                            height: 85px;
+                            padding: 12px;
+                            border: solid 1px;
+                            border-radius: 4px;
+                            border-color: $quaternary;
+                            font-size: $fontSizeMedium;
+                        }
+                        textarea {
+                            padding: 12px;
+                            height: 300px;
+                            border: solid 1px;
+                            border-radius: 4px;
+                            border-color: $quaternary;
+                            resize: none;
+                            margin-bottom: 35px;
+                        }
+                        button {
+                            width: 250px;
+                            height: 80px;
+                            background-color: $quinary;
+                            border: solid 1px;
+                            border-radius: 4px;
+                            border-color: $quaternary;
+                            font-size: $fontSizeMedium;
+                        }
+                        button:hover {
+                            cursor: pointer;
+                        }
+                        .validation-error {
+                            border-color: $septenary;
+                        }
+                    }
+                }
+            }
+            .illustration {
+                img {
+                    height: 380px;
+                }
+            }
+        }
+    }
+    
+    @media screen and (min-width: 1100px) {
+        main {
+            .wrap-section2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0 auto;
+                padding: 100px 30px;
+                max-width: 1680px;
+                .section2-content {
+                    align-items: flex-start;
+                    text-align: left;
+                    margin-bottom: 0;
+                    width: 650px;
+                    form {
+                        fieldset {
+                            legend {
+                                h1 {
+                                    font-size: $fontSizeHigh;
+                                    font-weight: 300;
+                                }
+                            }
+                            label {
+                                margin-top: 35px;
+                                font-size: $fontSizeVeryLow;
+                            }
+                            input {
+                                width: 600px;
+                                height: auto;
+                                font-size: $fontSizeLow;
+                            }
+                            textarea {
+                                height: 200px;
+                            }
+                            button {
+                                width: 170px;
+                                height: 40px;
+                                font-size: $fontSizeVeryLow;
+                            }
+                        }
+                    }
+                }
+                .illustration {
+                    padding-left: 25%;
+                    img {
+                        height: 350px;
+                    }
+                }
+            }
+        }
+    }
