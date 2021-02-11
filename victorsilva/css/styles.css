@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&family=Oxygen:wght@300&display=swap");
+
+/* CSS Reset */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+/*corpo*/
+body {
+	font-family: "Oxygen", sans-serif;
+	margin: 0;
+}
+h1,
+h2 {
+	font-family: "Nova Square", cursive;
+}
+.container {
+	max-width: 1140px;
+	display: block;
+	margin: 0 auto;
+}
+/*Menu*/
+.menu {
+	background-color: #fdd55e;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 15px;
+}
+
+nav ul {
+	font-size: 20px;
+	list-style: none;
+	display: flex;
+}
+
+.lista-menu li {
+	padding: 10px 20px;
+}
+
+.logo-menu {
+	width: 220px;
+	margin-top: 15px;
+}
+
+.nav-link {
+	text-decoration-line: none;
+	color: #0d1117;
+	font-weight: 400;
+	padding: 5px 0;
+}
+
+.lista-menu a::before {
+	position: absolute;
+	content: "";
+	top: 40px;
+	height: 2px;
+	width: 100%;
+	background: black;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.4s linear;
+}
+
+.lista-menu a {
+	position: relative;
+}
+
+.lista-menu a:hover:before {
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+.checkbtn {
+	font-size: 30px;
+	line-height: 80px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	display: none;
+}
+
+/*Seção Sobre*/
+
+.sobre {
+	width: 100%;
+	height: 550px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url(../img/banner.jpg);
+	background-size: 100%;
+}
+.texto-banner {
+	padding: 200px 0px;
+}
+
+.texto-banner h1 {
+	color: white;
+	font-size: 40px;
+	font-weight: 800;
+}
+
+.texto-banner p {
+	color: white;
+	font-size: 24px;
+}
+/*Seção serviços*/
+
+.serviços-container {
+	display: flex;
+	margin-top: 80px;
+}
+
+.texto-sobre h1 {
+	font-size: 40px;
+	font-weight: 300;
+}
+.texto-sobre p {
+	font-size: 24px;
+	color: black;
+}
+
+.serviços-container img {
+	width: 35%;
+	padding-left: 80px;
+}
+
+/*Seção contato*/
+.contato {
+	margin-top: 160px;
+}
+.contato-container {
+	display: flex;
+	margin-top: 80px;
+}
+
+.formulario {
+	width: 570px;
+	margin: 20px 30px 0px 20px;
+}
+
+.formulario h2 {
+	font-size: 40px;
+	font-weight: 300;
+}
+
+input,
+textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 1em;
+	border: 1px solid #999;
+	border-radius: 4px;
+}
+
+.contato-container img {
+	width: 35%;
+	height: 100%;
+	padding-left: 80px;
+	margin-top: 40px;
+}
+.btn-form {
+	background-color: #fdd55e;
+	cursor: pointer;
+	width: 30%;
+	padding: 10px 30px 13px;
+	border-radius: 10px;
+	line-height: 20px;
+	text-align: center;
+	color: black;
+	font-size: 17px;
+	border: 1px solid #999;
+}
+
+/*Rodapé*/
+
+footer {
+	width: 100%;
+	background-color: #f2f2f2;
+	height: 120px;
+}
+
+.texto-footer {
+	text-align: center;
+	padding-top: 30px;
+	margin-top: 30px;
+}
+
+@media (max-width: 952px) {
+	.logo-menu {
+		width: 190px;
+		margin-top: 10px;
+		padding-left: 20px;
+	}
+
+	@media (max-width: 690px) {
+		/*Menu*/
+
+		.checkbtn {
+			display: block;
+		}
+
+		ul {
+			position: fixed;
+			width: 100%;
+			height: 100vh;
+			background: #f3c94bf7;
+			top: 70px;
+			left: -120%;
+			text-align: center;
+			transition: all 0.5s;
+		}
+		nav ul {
+			font-size: 30px;
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+		}
+		.lista-menu a:hover:before {
+			display: none;
+			background-color: wheat;
+		}
+
+		.lista-menu.active {
+			left: 0;
+		}
+
+		/*Seção Sobre*/
+		.sobre {
+			width: 100%;
+			height: 400px;
+		}
+
+		.texto-banner {
+			margin-left: 20px;
+			padding: 200px 0px;
+		}
+
+		.texto-banner h1 {
+			font-size: 30px;
+		}
+
+		.texto-banner p {
+			font-size: 18px;
+		}
+
+		/*Seção Serviço*/
+		.texto-sobre h1 {
+			font-size: 23px;
+		}
+		.texto-sobre p {
+			font-size: 13px;
+		}
+		.texto-sobre {
+			margin: 0px 8px;
+		}
+		.serviços-container img {
+			width: 40%;
+			height: 40%;
+			padding-left: 60px;
+		}
+
+		/*Seção contato*/
+		.formulario h2 {
+			font-size: 23px;
+		}
+	}
+}

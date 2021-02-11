@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 01</title>
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="container">
+                <nav>
+                    <a>
+                        <img src="img/logo@3x.png" alt="Logo Guepardo" class="logo-menu">
+                    </a>
+                    <ul class="lista-menu" id="lista-menu">
+                        <li><a class="nav-link" href="#">Início</a></li>
+                        <li><a class="nav-link" href="#Sobre">Sobre</a></li>
+                        <li><a class="nav-link" href="#Serviços">Serviços</a></li>
+                        <li><a class="nav-link" href="#Contato">Contatos</a></li>
+                    </ul>
+                    <button for="check" class="checkbtn" id="check">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="sobre" id="Sobre">
+        <div class="container">
+            <div class="texto-banner">
+                <h1>Entregando cargas e sonhos</h1>
+                <p>Desde de 1980 entregando cargas e fazendo pessoas sorrirem e se realizarem.</p>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <section class="serviços" id="Serviços">
+                <div class="serviços-container">
+                <div class="texto-sobre">
+                    <h1>Entregas rápidas e eficientes</h1>
+                    <p>Temos experiência na entrega de cargas para pessoas e empresas em tempo recorde para todo o Brasil.</p>
+                </div>
+                <img src="img/relogio.png" alt="relogio">
+                </div>
+            
+        </section>
+        <section class="contato" id="Contato">
+                <div class="contato-container">
+                    <div class="formulario">
+                        <h2>Fale conosco</h2>
+                        <form method="post" id="myForm" class="card">
+                                <label for="">Nome</label>
+                                <input name="nome" required="required" placeholder="João da Silva" type="text" id="nome">
+        
+                                <label for="">E-mail</label>
+                                <input name="email" required="required" placeholder="joao@suaempresa.com" type="email" id="email">
+        
+                                <label for="">Mensagem</label>
+                                <textarea name="mensagem" id="mensagem" cols="30" rows="10" id="mensagem"></textarea>
+                                <button
+                                    type="submit"
+                                    class="btn-form">
+                                    Enviar
+                                </button>
+                        </form>
+                    </div>
+                    <img src="img/baloes.png" alt="caixas de dialogo">
+                </div>
+            </section>
+    </div>
+    <footer>
+        <div class="texto-footer">
+            <p>© 2021 Guepardo Transportes</p>
+        </div>
+    </footer>
+
+    <script>
+        let form = document.getElementById('myForm')
+        form.onsubmit = function (e){
+            e.preventDefault()
+            let name = document.getElementById('nome')
+            let email = document.getElementById('email')
+            let mensagem = document.getElementById('mensagem')
+
+            const url = "http://mockbin.org/bin/1a3433ce-35cc-4eaf-81d4-36bcc37801bf"
+            const body = {
+                nome: name.value,
+                email: email.value,
+                mensagem: mensagem.value
+            }
+                
+            fetch(url, {
+                method: 'POST', 
+                body: JSON.stringify(body)
+            }).then((response) => {
+                const paragraph = document.createElement('p')
+                paragraph.innerHTML = 'Mensagem enviada...'
+
+                form.appendChild(paragraph)
+            }).catch(error => {
+                const paragraph = document.createElement('p')
+                paragraph.innerHTML = 'Mensagem nao enviada...'
+
+                form.appendChild(paragraph)
+            })
+        }
+    
+        const button = document.getElementById('check')
+        button.onclick = function () {
+            let lista = document.getElementById('lista-menu')
+            lista.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
