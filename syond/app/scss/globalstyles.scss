@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Oxygen&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100vw;
+    max-height: 100vh;
+    font-family: 'Oxygen', sans-serif;
+    color: #101010;
+    font-size: 1.125rem;
+    line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Nova Square', cursive;
+}
+
+*,
+button,
+input {
+    background: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+     :visited {
+        text-decoration: none;
+    }
+}

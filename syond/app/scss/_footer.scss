@@ -1,0 +1,18 @@
+footer {
+    .wrap-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 180px;
+        background-color: $senary;
+        font-size: $fontSizeHigh;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    footer {
+        .wrap-footer {
+            font-size: $fontSizeLow;
+        }
+    }
+}
