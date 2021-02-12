@@ -19,15 +19,9 @@ let form = document.getElementById('myForm')
                 method: 'POST', 
                 body: JSON.stringify(body)
             }).then((response) => {
-                const paragraph = document.createElement('p')
-                paragraph.innerHTML = 'Mensagem enviada...'
-
-                form.appendChild(paragraph)
+                alert('Mensagem enviada, em breve entraremos em contato, obrigado!')
             }).catch(error => {
-                const paragraph = document.createElement('p')
-                paragraph.innerHTML = 'Mensagem nao enviada...'
-
-                form.appendChild(paragraph)
+                alert('Erro, verifique os dados e tente novamente.')
             })
         }
 /**
