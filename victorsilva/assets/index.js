@@ -1,6 +1,9 @@
 /**
  * Função para enviar formulario
+ * Bin Identifier:
+http://mockbin.org/bin/1a3433ce-35cc-4eaf-81d4-36bcc37801bf/view
  */
+
 let form = document.getElementById('myForm')
         form.onsubmit = function (e){
             e.preventDefault()
