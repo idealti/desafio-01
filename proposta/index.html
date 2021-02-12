@@ -4,13 +4,104 @@
   <meta charset="utf-8" />
   <title>Início | Guepardo Transportes</title>
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-  <h1>Welcome!</h1>
-  <p>
-    Please, develop the Guepardo's home screeen here
-  </p>
-  <script src="app.js"></script>
+        <header>
+          <nav class="navbar navbar-expand-md fixed-top ">
+            <a class="navbar-brand" href="#">
+              <img src="img/logo@3x.png" class="logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ml-auto menu">
+                <li class="nav-item active">
+                  <a class="nav-link active" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Serviços</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <main>
+
+
+        
+        <div class="container-fluid banner ">
+            <div class="banner-text overlay">
+              <div class="container">
+              <div class="row conteudoBanner">
+                <div class="col">
+                    <h1>Entregando cargas e sonhos</h1>
+                    <p>Desde 1980 entregando cargas e fazemos pessoas e negocios sorrirem e se realizarem.</p>
+                </div>
+                <div class="col"></div>
+              </div>
+            </div>
+              
+            </div>
+            <div class="container">
+              <div class="row conteudoEntrega">
+                  <div class="col">
+                      <h1>Entregas rapidas e eficientes</h1>
+                      <p>temos experiência na entrega de cargas para pessoas e empresas em<br>tempo recorde no Brasil</p>
+                    </div>
+                    <div class="col">
+                      <img src="img/relogio.png" alt="" width="300px">
+                    </div>    
+                </div>
+                <div class="row conteudoEntrega">
+                    <div class="col">
+                        <h1>Fale Conosco</h1>
+                        <form>
+                            <div class="form-group">
+                              <label>Nome</label>
+                              <input type="text" id="idNome" class="form-control" placeholder="João da Silva">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">E-mail</label>
+                                <input type="email" class="form-control" id="idEmail" placeholder="joaodasilva@email.com">
+                            </div>
+                            <div class="form-group">
+                              <label>Mensagem</label>
+                              <textarea class="form-control" id="idMensagem" rows="3"></textarea>
+                            </div>
+                            <button id="botaoEnviar" onclick="enviaFormulario()" class="btn btn-enviar">Enviar</button>
+                          </form>
+                      </div>
+                      <div class="col">
+                        <img src="img/baloes.png" alt="" width="300px">
+                      </div>    
+                  </div>    
+                  
+                        
+            </div>
+            <footer class="footer">
+                <p><span>&#169</span>2021 Guepardo Transoportes</p>
+            </footer>
+        </div>
+      </main>
+    
+    
+  
+  
+  
+<script src="app.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
 

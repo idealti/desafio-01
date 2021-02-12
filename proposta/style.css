@@ -3,11 +3,117 @@
  */
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Oxygen&display=swap');
 
+
+
 html, body {
   font-family: 'Oxygen', sans-serif;
   color: #101010;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Nova Square', cursive;
 }
+
+/* HEADER */
+
+.navbar{
+  background-color: #fdd55e;
+}
+
+.nav-link {
+  color: #101010;
+  font-weight: bold;
+}
+
+.nav-link:active{
+  text-decoration: underline;
+}
+
+.logo{
+  width: 180px;
+  height: 50px;
+  margin: 20px;
+  margin-left: 80px;
+}
+
+.menu{
+  padding-right: 30px;
+}
+
+.menu li{
+  padding: 10px;
+}
+
+/* HEADER */
+
+/* MAIN */
+
+.banner{
+  background-image: url("./img/banner.jpg");
+  background-size: cover;
+  height: 490px; 
+  margin-top: 50px;
+}
+
+.overlay{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+  background-size: cover;
+  height: 490px; 
+  margin-top: 50px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.banner-text{
+  padding-top: 250px;
+  color: #fff;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.banner-text h1{
+  font-size: 22px;
+  font-family: 'Nova Square', sans-serif;
+}
+
+.conteudoBanner{
+  padding: 50px;
+  padding-top: 10px;
+}
+
+.conteudoEntrega{
+  padding: 50px;
+}
+
+.conteudoEntrega p{
+  font-family: 'Oxygen', sans-serif;
+  font-size: 15px;
+}
+
+.conteudoEntrega h1{
+  font-size: 23px;
+  font-family: 'Nova Square', sans-serif;
+}
+
+.conteudoEntrega img{
+  margin-left: 50px;
+}
+
+.btn-enviar{
+  width: 150px;
+  background-color: #fdd55e;
+  color: #101010;
+  margin-top: 20px;
+  height: 35px;
+}
+
+.footer{
+  background-color: #ccc;
+  text-align: center;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 40px;
+}
+
+/* MAIN */
+
