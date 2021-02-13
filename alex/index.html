@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Início | Guepardo Transportes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+<div id="container">
+    <div class="row">
+        <section class="topo col-12" id="inicio">
+            <div class="logo col-6">
+                <img src="assets/logo@3x.png">
+            </div>
+            <div class="menu col-6">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#inicio">Início</a>
+                            <a href="#sobre">Sobre</a>
+                            <a href="#servicos">Serviços</a>
+                            <a href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </div>
+    <div class="row">
+        <section class="col-12" id="sobre">
+            <div class="sobre col-12">
+                <div class="title col-6">
+                    <h4>Entregando cargas e sonhos</h4>
+                    <p>Desde 1980 entregando cargas e fazendo pessoas e negócios sorrirem e se realizarem.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="row">
+        <section class="col-12" id="servicos">
+            <div class="servicos col-12">
+                <div class="title col-8">
+                    <h4>Entregas rápidas e eficientes</h4>
+                    <p>Temos experiência na entrega de cargas para pessoas e empresas em tempo recorde para todo o
+                        Brasil.</p>
+                </div>
+                <div class="img col-4">
+                    <img src="assets/relogio.png">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="row">
+        <section class="col-12" id="contato">
+            <div class="contato col-12">
+                <div class="form col-8">
+                    <form method="post" class="col-8">
+                        <h4>Fale conosco</h4>
+                        <div class="form-grup mb-3">
+                            <label for="nome" class="label-inline">Nome</label>
+                            <input class="form-control" type="text" id="nome" placeholder="João da Silva">
+                        </div>
+
+                        <div class="form-grup mb-3">
+                            <label for="email" class="label-inline">E-mail</label>
+                            <input class="form-control" type="email" id="email" placeholder="joao@suaempresa.com">
+                        </div>
+
+                        <div class="form-grup mb-4">
+                            <label for="mensagem" class="label-inline">Mensagem</label>
+                            <textarea class="form-control" id="mensagem"></textarea>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <input type="button" class="btn" value="Enviar" onclick="sendForm()">
+                        </div>
+                    </form>
+                </div>
+                <div class="img col-4">
+                    <img src="assets/baloes.png">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="row">
+        <section class="col-12" id="footer">
+            <div class="assinatura">
+                &#169; 2021 Guepardo Transportes
+            </div>
+        </section>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
+

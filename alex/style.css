@@ -1,0 +1,171 @@
+/**
+ * Importing website's font family
+ */
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Oxygen&display=swap');
+
+html, body {
+    font-family: 'Oxygen', sans-serif;
+    color: #101010;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nova Square', cursive;
+}
+
+#inicio {
+    height: 70px;
+    background-color: #fdd55e;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 8px;
+    padding-left: 60px;
+    float: left;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.menu {
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 8px;
+    padding-left: 60px;
+    float: left;
+    text-align: center;
+}
+
+.menu nav ul {
+    font-size: 12px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.menu nav ul li a {
+    color: #000;
+    margin: 0px 15px;
+    text-decoration: none;
+    padding-bottom: 7px;
+}
+
+.menu nav ul li a:active, .menu nav ul li a:hover {
+    border-bottom: 2px solid #000;
+}
+
+#sobre {
+    /*display: inline-block;*/
+    left: 0;
+    height: 300px;
+    background-image: url("assets/banner.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.sobre {
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    height: 300px;
+    padding-top: 7%;
+    padding-left: 7%;
+}
+
+.sobre .title {
+    color: #fff;
+}
+
+.sobre .title h4 {
+    margin-bottom: 1px;
+    font-size: 20px;
+}
+
+.sobre .title p {
+    font-size: 12px;
+}
+
+#servicos {
+    left: 0;
+    height: 300px;
+}
+
+#servicos .title {
+    padding-top: 7%;
+    padding-left: 7%;
+    float: left;
+}
+
+#servicos .title h4 {
+    margin-bottom: 1px;
+    font-size: 20px;
+}
+
+#servicos .title p {
+    font-size: 12px;
+}
+
+#servicos .img {
+    padding-top: 3%;
+    float: left;
+}
+
+#servicos .img img {
+    width: 350px;
+}
+
+#contato {
+    left: 0;
+}
+
+#contato .form {
+    padding-top: 7%;
+    padding-left: 7%;
+    float: left;
+}
+
+#contato .form form label {
+    font-size: 12px;
+}
+
+#contato .img {
+    padding-top: 10%;
+    float: left;
+}
+
+#contato .img img {
+    width: 350px;
+}
+
+#contato input[type='text'], #contato input[type='email'], #contato textarea {
+    border-radius: 0px;
+}
+
+#contato input[type='text'] #mensagem {
+    resize: none;
+    overflow: auto;
+}
+
+#contato input[type='button'] {
+    background-color: #fdd55e;
+    height: 30px;
+    width: 120px;
+    padding-top: 0px;
+    border-radius: 0px;
+}
+
+#footer {
+    left: 0;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    height: 80px;
+}
+
+#footer .assinatura {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+}
