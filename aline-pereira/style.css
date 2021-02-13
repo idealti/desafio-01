@@ -1,0 +1,236 @@
+nav {
+    background: #ecec53;
+    padding: 5px 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+nav ul li.items {
+    position: relative;
+    width: auto;
+    margin: 0 16px;
+    text-align: center;
+    order: 3;
+    font-weight: bold;
+}
+
+nav ul li.items:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 5px;
+    height: 2px;
+    width: 100%;
+    background: #000000;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+nav ul li.items:hover:after {
+    opacity: 1;
+    bottom: 8px;
+}
+
+nav ul li.logo {
+    flex: 1;
+    cursor: default;
+    user-select: none;
+}
+
+nav ul li.logo img {
+    width: 150px;
+    margin-left: 20px;
+    padding: 15px 0;
+}
+
+nav ul li a {
+    color: #000000;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+nav ul li i {
+    font-size: 23px;
+}
+
+nav ul li.btn {
+    display: none;
+}
+
+nav ul li.btn.hide i:before {
+    content: '\f00d';
+}
+
+
+/*banner*/
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    background: url("./assets/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bannerText {
+    padding: 100px 60px;
+    color: #FFFFFF;
+}
+
+.bannerText h2 {
+    margin-bottom: 20px;
+}
+
+
+/*=============== 
+HERO
+==================*/
+
+section.hero {
+    margin: 80px 0;
+}
+
+section.hero .container {
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.hero .container .text {
+    margin: auto;
+}
+
+section.hero .container img {
+    width: 370px;
+    margin-left: 40px;
+}
+
+section.hero h2 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+/*=============== 
+FORM
+==================*/
+
+section.form .container {
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.form .container h2 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+section.form .container img {
+    width: 370px;
+    margin-left: 40px;
+}
+
+section.form ul li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+section.form ul>li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+section.form ul li label,
+section.form ul li p {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+}
+
+section.form ul>li>label,
+ul li p {
+    flex: 1 0 120px;
+    max-width: 350px;
+}
+
+section.form ul>li>label+*,
+.flex-inner {
+    flex: 1 0 350px;
+}
+
+section.form ul li input:not([type='checkbox']),
+ul li textarea {
+    padding: 10px;
+}
+
+section.form ul li button {
+    margin-right: auto;
+    padding: 10px 16px;
+    border: none;
+    background: #ecec53;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 6px;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+.footer p {
+    background: #d3d3d3;
+    text-align: center;
+    padding: 30px 0;
+}
+
+@media (max-width: 992px) {
+    nav {
+        padding: 5px 30px;
+    }
+    nav ul li.items {
+        width: 100%;
+        display: none;
+    }
+    nav ul li.items.show {
+        display: block;
+    }
+    nav ul li.btn {
+        display: block;
+    }
+    nav ul li.items:hover:after {
+        opacity: 0;
+    }
+    section.hero .container {
+        flex-direction: column;
+    }
+    section.hero .container img {
+        width: 300px;
+        margin-left: 0px;
+    }
+    section.form .container {
+        flex-direction: column;
+    }
+    section.form .container img {
+        width: 300px;
+        margin-left: 0px;
+    }
+}
