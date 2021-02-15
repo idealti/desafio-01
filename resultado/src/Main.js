@@ -14,7 +14,7 @@ function App() {
           </h1>
           <nav className="nav-container">
             <ul className="menu-nav">
-              <li className="nav__item ">
+              <li className="nav__item">
                 <a className="nav__link nav__link--active" href="#">Início</a>
               </li>
               <li className="nav__item">

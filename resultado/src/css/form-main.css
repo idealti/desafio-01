@@ -1,0 +1,80 @@
+/* Form Edit */
+
+.main-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #000;
+    margin: 2rem 0;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 40rem;
+    /* padding: 0 15vw 0 0; */
+    flex-wrap: wrap;
+}
+.form__title{
+    font-family: 'Nova Square', 'Gill Sans', Calibri, sans-serif;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+}
+.form__image{
+    height: auto;
+    max-width: 28vw;
+    min-width: 20vw;
+    flex: 1 2 10vw;
+    /* margin: 0 8vw; */
+}
+.form__subtitle{
+    font-family: 'Oxygen', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 2.5em;
+}
+
+.form__input{
+    max-width: 30vw;
+    font-family: 'Oxygen', Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    line-height: 2.2em;
+    border-radius: 0.35em;
+    border: solid 1px #d1d1d1;
+    outline: none;
+    padding: 0.5em 0.7em;
+    margin-bottom: 1.5rem;
+    color: #272727;
+}
+.form__input--warning{
+    box-shadow: inset 0 0 0.3em #ff0000;
+}
+textarea{
+    resize: none;
+    min-height: 10rem;
+    scroll-behavior: smooth;
+}
+.form__submit{
+    max-width: 9vw;
+    font-family: 'Oxygen', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    border: none;
+    border-radius: 0.35em;
+    outline: none;
+    padding: 0.5em 0.7em;
+    margin-top: 1vh 0 1.5rem 0;
+    line-height: 1.6em;
+    color: #272727;
+    background-color: #FDD55E;
+}
+.form__submit:hover{
+    color: #FDD55E;
+    background-color: #333333;
+}
+.form__submit:active{
+    color: #FDD55E;
+    background-color: #222;
+}
