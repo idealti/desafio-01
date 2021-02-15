@@ -14,7 +14,6 @@ export default function Form() {
     const mockbin = '5b539c91-3d80-4be1-811c-ead0f3fccffb';
     const url = `http://mockbin.org/bin/${mockbin}`;
     const data = { name: name.value, email: email.value, msg: msg.value };
-    console.log(data)
 
     function validateEmail(email) {
         const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
@@ -33,7 +32,7 @@ export default function Form() {
                 sendData(data, url);
                 event.preventDefault();
             }else{
-                console.log('Foii')
+
                 setError({level: "Aviso", value: "E-mail inválido.", isError: true})
             }
 
