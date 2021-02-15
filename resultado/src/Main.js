@@ -43,7 +43,7 @@ function App() {
             <h2 className="d__title">Entregar rápidas e eficientes</h2>
             <p className="d__text">Temos experiência na entrega de cargas para pessoas e empresas em tempos recorde para todo o Brasil.</p>
           </div>
-          <img className="d__image" src="./images/relogio.png" />
+          <img className="d__image" alt="Imagem de Relógio" src="./images/relogio.png" />
         </section>
 
       
