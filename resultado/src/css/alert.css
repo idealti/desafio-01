@@ -1,0 +1,30 @@
+.alert{
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translateX(-50%) translateY(-50%);
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    border: solid 15px #333;
+}
+.alert__title{
+    font-family: 'Nova Square', 'Gill Sans', Calibri, sans-serif;
+    font-size: 2em;
+    line-height: 1.5em;
+    position: absolute;
+    top: 20px;
+    color: crimson;
+}
+
+.alert__text{
+    font: normal 1em/2em 'Oxygen', sans-serif;
+    font-weight: 700;
+    max-height: 120px;
+    height: 85px;
+}

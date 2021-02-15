@@ -1,0 +1,130 @@
+/* Global Edit */
+:root{
+    --bg-menu-color: #FDD55E;
+}
+
+.is-center{
+    padding: 0 10vw;
+}
+.page{
+    max-width: 1920px;
+    min-height: 1366px;
+    /* background-color: lightgray; */
+    /* padding: 0 7vw; */
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    flex-direction: column; 
+    
+}
+
+/* Menu Edit */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+    background-color: var(--bg-menu-color);
+}
+.br-hide{
+    display: none;
+}
+.menu-logo{
+    max-width: 300px;
+    height: auto;
+}
+.menu-nav{
+    min-width: 30rem;
+    height: auto;
+    /* margin: 0 5rem; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__item{
+    font: 700 1.7em/2.5em "Oxygen", sans-serif;
+    color: #333333;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.nav__link{
+    display: inline-block;
+}
+.nav__link--active{
+    cursor: default;
+    box-shadow: 0 8px 0 #333333;
+}
+.nav__link:visited{
+    color: #333333;
+}
+.banner{
+    display: flex;
+    height: 30rem;
+    width: 100%;
+    align-items: center;
+    color: #fff;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Banner Edit */
+.b-container{
+    width: auto;
+
+}
+.b__title{
+    font-family: 'Nova Square', 'Gill Sans', Calibri, sans-serif;
+    font-size: 3em;
+    line-height: 2em;
+}
+.b__text{
+    font: normal 1.5em 'Oxygen', sans-serif;
+}
+
+/* Description Edit */
+
+.main-description{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6rem 0;
+    color: #000;
+}
+.d-container{
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 60rem;
+}
+.d__title{
+    font-family: 'Nova Square', 'Gill Sans', Calibri, sans-serif;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+}
+.d__text{
+    font: normal 1.8em 'Oxygen', sans-serif;
+    max-width: 40vw;
+    /* padding: 0.5em; */
+}
+.d__image{
+    height: auto;
+    max-width: 28vw;
+    min-width: 20vw;
+    flex: 1 2 10vw;
+
+}
+
+/* Footer Edit */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
+    font: normal 400 1.1rem/2rem 'Oxygen', sans-serif;
+    height: 15vh;
+}
